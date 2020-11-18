@@ -66,7 +66,7 @@ try:
         SpiWrite(spi, 0x0D, 0x10)      #Сhange DEC_RATE    
         SpiWrite(spi, 0x0C, 0x99)      #Сhange DEC_RATE    
         
-        #Вывод данных в консоль
+        #Output data to the console
         print("Температура:   ", "{:10.4f}".format(temp), " degС")
         print("X гироскоп:   ", "{:10.4f}".format(xgyro), " deg/s")
         print("Y гироскоп:   ", "{:10.4f}".format(ygyro), " deg/s")
