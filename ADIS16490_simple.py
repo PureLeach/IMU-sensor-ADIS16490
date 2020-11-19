@@ -74,7 +74,7 @@ try:
         print("X акселерометр:   ", "{:10.4f}".format(xacc), " mg")
         print("Y акселерометр:   ", "{:10.4f}".format(yacc), " mg")
         print("Z акселерометр:   ", "{:10.4f}".format(zacc), " mg")
-        print('NULL_CNFG (должен быть = 0x70A на 3 стр) ', hex(SpiRead(spi, 0x0E))))
+        print('NULL_CNFG (должен быть = 0x70A на 3 стр) ', hex(SpiRead(spi,0x0E)))
         print('Decrate', SpiRead(spi, 0x0C))
         time.sleep(1)               #Delay between data updates
         
