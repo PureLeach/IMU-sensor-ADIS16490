@@ -1,7 +1,7 @@
 import spidev                   #Library for working with the SPI interface
 import time                     #Library for working with time
 
-#Инициализация интерфейса SPI
+#Initializing the SPI interface
 spi=spidev.SpiDev()             #Creating an SPI object
 spi.open(0, 0)                  #Selecting the port number and device number (CS) of the SPI bus
 spi.max_speed_hz=15000000       #Setting the maximum speed of the SPI bus
